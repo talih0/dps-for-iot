@@ -129,7 +129,7 @@ elif env['PLATFORM'] == 'posix':
 
     # Check if we need to build libuv
     conf = env.Configure()
-    extUV = not conf.CheckLib('uv', symbol='uv_mutex_init_recursive')
+    extUV = True
     env = conf.Finish()
 
 else:
